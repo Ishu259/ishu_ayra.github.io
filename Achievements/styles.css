@@ -31,7 +31,7 @@
 .logo {
     color: rgb(4, 98, 79);
     float: left;
-    padding-left: 5%;
+
     font-style: italic;
     text-shadow: 1px 1px 20px rgb(5, 83, 5);
     ;
@@ -166,4 +166,50 @@
 .circle2 {
     bottom: 3%;
     left: 7%;
+}
+
+
+/* making responsive*/
+
+@media (max-width: 720px) {
+    .navi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .lists:hover {
+        padding-bottom: 5vh;
+    }
+
+    .lists:hover .subtext {
+        text-indent: -10000px;
+        transition-duration: 5ms;
+    }
+
+    .menu {
+        margin-top: 2vh;
+    }
+
+    .Maintext {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 550px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Maintext {
+        font-size: 1em;
+    }
 }

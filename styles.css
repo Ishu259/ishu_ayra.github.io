@@ -4,14 +4,24 @@
     box-sizing: border-box;
 }
 
-main {
+/* main {
     min-height: 100vh;
     background: linear-gradient(to right top, #65dfc9, #6cdbed);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
     /* display: flex;
     align-items: center; */
-    /* padding-top: 8vh;
+/* padding-top: 8vh;
     padding-left: 8vw; */
 
+
+/* } */
+
+.bg-main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbed);
 
 }
 
@@ -138,8 +148,8 @@ main {
 
 
 .dashboard .links .link img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.5vw;
+    height: 1.5vh;
     margin: 0vh 1vw;
 }
 
@@ -162,8 +172,8 @@ main {
 
 .center h2 {
     padding: 5vh 5vw;
-
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+    border-radius: 2rem;
 }
 
 .center h2 span {
@@ -241,7 +251,7 @@ main {
 
 .education {
     display: flex;
-    align-items: center;
+
     padding: 10vh 2vw;
     flex-direction: column;
     background: linear-gradient(to left bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
@@ -268,4 +278,64 @@ main {
     outline: 2px solid rgb(115, 226, 234);
     outline-offset: 2px;
 
+}
+
+
+/* making responsive */
+
+@media (max-width: 850px) {
+    .bg-main {
+        background: linear-gradient(to right top, #95e8f1ca, #8ce6f49b);
+    }
+
+    .glass {
+        flex-direction: column;
+
+    }
+
+    .dashboard h3 {
+        margin: 2vh 0vw;
+    }
+
+    /* 
+    .center {
+        background: linear-gradient(to left bottom, rgba(158, 230, 230, 0), rgba(174, 234, 232, 0.555));
+    } */
+
+    .glass {
+        background: linear-gradient(to left bottom, rgba(198, 209, 209, 0), rgba(174, 234, 232, 0));
+
+    }
+
+    .dashboard {
+        box-shadow: 7px 7px 3px rgb(46, 63, 67);
+    }
+
+
+
+    .circle1,
+    .circle2 {
+        display: none;
+    }
+
+    .education {
+        padding: 5vh 2vw;
+        border-bottom-right-radius: 0rem;
+        border-bottom-left-radius: 0rem;
+        box-shadow: -7px -7px 3px rgb(46, 63, 67);
+    }
+
+    .skill img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .dashboard .links .link img {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    .center h2 span {
+        font-size: 2rem;
+    }
 }

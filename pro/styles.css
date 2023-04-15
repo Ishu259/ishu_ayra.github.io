@@ -32,7 +32,7 @@
 .logo {
     color: rgb(4, 98, 79);
     float: left;
-    padding-left: 5%;
+
     font-style: italic;
     text-shadow: 1px 1px 20px rgb(5, 83, 5);
     ;
@@ -140,15 +140,6 @@
     box-shadow: -2px 8px 20px rgb(0, 128, 73)
 }
 
-.lists .subtext {
-    text-indent: -10000px;
-    margin-top: 1vh;
-}
-
-.lists:hover .subtext {
-    text-indent: 0px;
-    transition-duration: 5ms;
-}
 
 .circle1,
 .circle2 {
@@ -168,4 +159,55 @@
 .circle2 {
     bottom: 3%;
     left: 7%;
+}
+
+
+/*making responsive*/
+
+@media (max-width: 720px) {
+    .navi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .menu {
+        margin-top: 2vh;
+    }
+
+    .list_box {
+        margin-top: -8vh;
+    }
+
+    .lists p {
+        display: inline-block;
+        text-indent: -10000px;
+    }
+
+    .lists {
+        height: 7vh;
+        align-items: center;
+    }
+
+
+
+
+}
+
+@media (max-width: 520px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lists h2 {
+        font-size: 1rem;
+    }
 }
